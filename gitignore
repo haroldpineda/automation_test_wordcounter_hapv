@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+.byebug_history
+.env
+.gemfile.example
+reports/*
+!reports/.gitkeep
+/.rubocop-*
+/report
+/allure-report
+.metals
+.vscode
