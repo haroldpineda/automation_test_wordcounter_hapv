@@ -29,7 +29,6 @@ end
 
 def setup_browser(browser)
   case browser.to_sym
-  when :chrome_headless then setup_for_chrome_headless
   when :firefox then setup_for_firefox
   else setup_for_chrome
   end
