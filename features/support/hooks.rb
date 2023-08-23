@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+Before('@algorithm') do
+  Capybara.current_driver = :null
+end
+
 After do |scenario|
   if !scenario.source_tag_names.include?('@algorithm') && scenario.failed?
     # take screenshot
@@ -21,8 +25,4 @@ After do |scenario|
     Capybara.reset_sessions!
     Capybara.reset!
   end
-end
-
-Before('@algorithm') do
-  Capybara.current_driver = :null
 end

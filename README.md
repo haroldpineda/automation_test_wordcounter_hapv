@@ -55,7 +55,10 @@ Default browser is Google Chrome
 cucumber BROWSER=chrome
 cucumber BROWSER=firefox
 ```
-To run all the scenarios and generate a report with cucumber use:
+In the command line the report is generated with a link with this structure:
+https://reports.cucumber.io/reports/123456789-abcdefghijk
+
+To run all the scenarios and generate a report with cucumber use
 
 ```bash
 cucumber --tags @all_scenarios --publish
